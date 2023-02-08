@@ -1,0 +1,2 @@
+# flipped.nvim
+personal colorscheme
