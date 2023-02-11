@@ -1,4 +1,4 @@
-local api, opt = vim.api, vim.opt
+local api, opt, g = vim.api, vim.opt, vim.g
 local flip = {}
 
 local function flipped()
@@ -13,7 +13,7 @@ local function flipped()
       --bakcground
       bg = "#1b1b26",
       red = "#ed556a",
-      cream = "#e0d1ad",
+      moonwhite = "#f2e7e5",
       --for variable
       --blue
       qblue = '#619ac3',
@@ -57,7 +57,7 @@ function flip.load()
 
   local groups = {
       --Neovim Relate
-      Normal                     = { fg = f.cream, bg = f.bg },
+      Normal                     = { fg = f.moonwhite, bg = f.bg },
       --signcolumn
       SignColumn                 = { bg = f.bg },
       --buffer
@@ -69,10 +69,10 @@ function flip.load()
       Whitespace                 = { fg = f.base02 },
       --window
       VertSplit                  = { fg = f.base02 },
-      Title                      = { fg = f.lightorange },
+      Title                      = { fg = f.orange },
       --cursorline
       Cursorline                 = { bg = f.base02 },
-      CursorLineNr               = { fg = "#71A8CB" },
+      CursorLineNr               = { fg = f.qblue },
       --pmen
       Pmenu                      = { bg = f.base03, fg = f.orangewhite },
       PmenuSel                   = { bg = f.yellow, fg = f.base06 },
@@ -85,6 +85,8 @@ function flip.load()
       --Markup
       TODO                       = { bg = f.falan, fg = f.base02 },
       Conceal                    = { fg = f.falan },
+      Error                      = { fg = f.notify_red },
+      NonText                    = { link = 'Comment' },
       --------------------------------------------------------
       ---@Langauge Relate
       ---@Identifier
@@ -169,7 +171,7 @@ function flip.load()
       diffFile                   = { fg = f.cyan },
       --------------------------------------------------------
       ---@Lsp
-      DiagnosticError            = { fg = f.notify_red },
+      DiagnosticError            = { link = 'Error' },
       DiagnosticWarn             = { fg = f.notify_yellow },
       DiagnosticInfo             = { fg = f.notify_blue },
       DiagnosticHint             = { fg = f.notify_aqua },
@@ -189,18 +191,43 @@ function flip.load()
       --dashboard
       DashboardHeader            = { fg = f.voilet },
       DashboardFooter            = { link = 'Comment' },
-      DashboardProjectTitle      = { fg = f.notify_blue },
+      DashboardProjectTitle      = { fg = f.aqua },
       DashboardProjectTitleIcon  = { fg = f.teal },
-      DashboardProjectIcon       = { fg = f.orangewhite },
-      DashboardMruTitle          = { fg = f.notify_blue },
+      DashboardProjectIcon       = { fg = f.blue },
+      DashboardMruTitle          = { fg = f.aqua },
       DashboardMruIcon           = { fg = f.teal },
       DashboardFiles             = { fg = f.base04 },
       DashboardShortCut          = { link = 'Comment' },
+      DashboardShortCutIcon      = { link = '@variable' },
       --cmp
       CmpItemAbbr                = { fg = f.orangewhite },
       CmpItemAbbrMatch           = { fg = f.blue },
-      CmpItemKind                = { fg = f.aqua }
+      CmpItemKind                = { fg = f.aqua },
+      --Telescope
+      TelescopePromptBorder      = { bg = f.base06, fg = f.base06 },
+      TelescopePromptNormal      = { bg = f.base06 },
+      TelescopeResultsBorder     = { bg = f.base06, fg = f.base06 },
+      TelescopePreviewBorder     = { bg = f.base06, fg = f.base06 },
+      TelescopeSelectionCaret    = { fg = f.yellow },
+      TelescopeMatching          = { fg = f.teal },
   }
+
+  g.terminal_color_0 = f.bg
+  g.terminal_color_1 = f.red
+  g.terminal_color_2 = f.applegreen
+  g.terminal_color_3 = f.yellow
+  g.terminal_color_4 = f.blue
+  g.terminal_color_5 = f.violet
+  g.terminal_color_6 = f.aqua
+  g.terminal_color_7 = f.base06
+  g.terminal_color_8 = f.base05
+  g.terminal_color_9 = f.notify_red
+  g.terminal_color_10 = f.green
+  g.terminal_color_11 = f.notify_yellow
+  g.terminal_color_12 = f.notify_blue
+  g.terminal_color_13 = f.violet
+  g.terminal_color_14 = f.notify_aqua
+  g.terminal_color_15 = f.moonwhite
 
   api.nvim_command("hi clear")
   opt.background = "dark"
