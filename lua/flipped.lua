@@ -12,32 +12,32 @@ local function flipped()
       base06 = '#16161D',
       --bakcground
       bg = "#1b1b26",
-      red = "#BE3455",
+      red = "#ed556a",
       cream = "#e0d1ad",
       --for variable
-      moonwhite = '#b2cddb',
+      moonwhite = '#9cb553',
+      --blue
+      qblue = '#5698c3',
       blue = "#6d90d6",
       lightblue = '#95a6c9',
-      falan = "#30aecf",
-      pink = "#ff779f",
+      --
+      pink = "#f0a1a8",
       green = "#68945c",
-      gtea = "#91b821",
       ---orange
-      orange = "#ff770f",
-      orangeyellow = '#f3993a',
+      orange = "#de7622",
+      orangeyellow = '#FFA066',
       orangewhite = '#ddbb99',
       --
-      yellow = "#f2c867",
-      teal = '#0d9e82',
+      yellow = "#f4a83a",
+      lightyellow = '#f7e8aa',
       voilet = "#957FB8",
-      aqua = "#04b4ba",
+      aqua = "#5cb3cc",
       ---
       notify_red = "#e6454a",
       notify_yellow = "#f4bc34",
       notify_blue = "#1C95FC",
       notify_aqua = "#46D9F2",
       --orange for operator
-      lightorange = "#dc7759",
       bluelnum = "#294161",
       non = "NONE",
   }
@@ -83,8 +83,8 @@ function flip.load()
       -- various variable names
       ["@variable"]              = { fg = f.moonwhite },
       --built-in variable names (e.g. `this`)
-      ["@variable.builtin"]      = { fg = f.aqua, italic = true },
-      Constant                   = { fg = f.falan },
+      ["@variable.builtin"]      = { fg = f.red, italic = true },
+      Constant                   = { fg = f.yellow },
       ["@constant.builtin"]      = { link = 'Constant' },
       -- constants defined by the preprocessor
       ["@constant.macro"]        = {},
@@ -102,12 +102,12 @@ function flip.load()
       ["@type.qualifier"]        = { fg = f.voilet },
       --modifiers that affect storage in memory or life-time like C `static`
       ["@storageclass"]          = { fg = f.voilet },
-      ["@field"]                 = { fg = f.gtea },
-      ["@property"]              = { fg = f.gtea },
+      ["@field"]                 = { fg = f.orangeyellow },
+      ["@property"]              = { fg = f.orangeyellow },
       --------------------------------------------------------
       ---@Keywords
       Keyword                    = { fg = f.voilet },
-      ["@keyword.function"]      = { fg = f.blue },
+      ["@keyword.function"]      = { fg = f.voilet },
       ["@keyword.return"]        = { fg = f.red, italic = true },
       ["@keyword.operator"]      = { link = "Operator" },
       --if else
@@ -124,18 +124,18 @@ function flip.load()
       ---@Functions
       Function                   = { fg = f.blue },
       --built-in functions
-      ["@function.builtin"]      = { fg = f.orangeyellow },
+      ["@function.builtin"]      = { fg = f.qblue },
       --function calls
-      ["@function.call"]         = { fg = f.yellow },
+      ["@function.call"]         = { fg = f.blue },
       --preprocessor macros
-      ["@function.macro"]        = { fg = f.yellow },
-      ["@method"]                = { fg = f.yellow },
-      ["@method.call"]           = { fg = f.yellow },
-      ["@constructor"]           = { fg = f.blue },
-      ["@parameter"]             = { fg = f.blue },
+      ["@function.macro"]        = { fg = f.blue },
+      ["@method"]                = { fg = f.blue },
+      ["@method.call"]           = { fg = f.blue },
+      ["@constructor"]           = { fg = f.cream },
+      ["@parameter"]             = { fg = f.moonwhite },
       --------------------------------------------------------
       ---@Literals
-      String                     = { fg = f.green },
+      String                     = { fg = f.orangewhite },
       Number                     = { fg = f.orange },
       Boolean                    = { fg = f.orange },
       Float                      = { link = 'Number' },
@@ -145,8 +145,8 @@ function flip.load()
       Comment                    = { fg = f.base01 },
       --------------------------------------------------------
       ---@punctuation
-      ["@punctuation.bracket"]   = { fg = f.orangewhite },
-      ["@punctuation.delimiter"] = { fg = f.orangewhite },
+      ["@punctuation.bracket"]   = { fg = f.lightblue },
+      ["@punctuation.delimiter"] = { fg = f.lightblue },
       --------------------------------------------------------
       ---@Diff
       DiffAdd                    = { bg = f.green },
@@ -177,6 +177,7 @@ function flip.load()
       GitGutterChange            = { fg = f.blue },
       GitGutterDelete            = { fg = f.red },
       GitGutterChangeDelete      = { fg = f.red },
+      --dashboard
       DashboardHeader            = { fg = f.orangeyellow },
       DashboardFooter            = { link = 'Comment' },
       DashboardProjectTitle      = { fg = f.notify_blue },
