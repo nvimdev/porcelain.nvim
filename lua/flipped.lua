@@ -30,6 +30,7 @@ local function flipped()
       orangewhite = '#ddbb99',
       --
       yellow = "#fbb957",
+      xryellow = '#f7e8aa',
       yellowgreen = '#d0deaa',
       --
       voilet = "#957FB8",
@@ -116,11 +117,11 @@ function flip.load()
       Conditional                = { fg = f.voilet },
       --for while
       Repeat                     = { fg = f.voilet },
-      Debug                      = { fg = f.notify_red },
+      Debug                      = { fg = f.red },
       Label                      = { fg = f.pink },
       Include                    = { link = 'PreProc' },
       Exception                  = { fg = f.pink },
-      Statement                  = { fg = f.violet },
+      Statement                  = { fg = f.orange },
       PreProc                    = { fg = f.voilet },
       --------------------------------------------------------
       ---@Functions
@@ -134,7 +135,7 @@ function flip.load()
       ["@method"]                = { fg = f.blue },
       ["@method.call"]           = { fg = f.blue },
       ["@constructor"]           = { fg = f.cream },
-      ["@parameter"]             = { fg = f.moonwhite },
+      ["@parameter"]             = { fg = f.xryellow },
       --------------------------------------------------------
       ---@Literals
       String                     = { fg = f.orangewhite },
