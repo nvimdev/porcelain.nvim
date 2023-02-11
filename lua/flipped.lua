@@ -18,22 +18,25 @@ local function flipped()
       --blue
       qblue = '#5698c3',
       blue = "#6d90d6",
-      lightblue = '#95a6c9',
+      bluevoilet = '#95a6c9',
       --
       pink = "#ef82a0",
       --
       applegreen = '#9cb553',
       green = "#45b787",
+      --
       teal = "#1abc9c",
       ---orange
       orange = '#f0945d',
       orangewhite = '#ddbb99',
+      lhgreen = '#92b3a5',
       --
       yellow = "#fbb957",
       xryellow = '#f7e8aa',
       yellowgreen = '#d0deaa',
       --
       voilet = "#957FB8",
+      --
       aqua = "#5cb3cc",
       ---
       notify_red = "#e6454a",
@@ -82,7 +85,7 @@ function flip.load()
       --------------------------------------------------------
       ---@Langauge Relate
       ---@Identifier
-      Identifier                 = { fg = f.cream },
+      Identifier                 = { fg = f.applegreen },
       -- various variable names
       ["@variable"]              = { fg = f.applegreen },
       --built-in variable names (e.g. `this`)
@@ -134,8 +137,8 @@ function flip.load()
       ["@function.macro"]        = { fg = f.blue },
       ["@method"]                = { fg = f.blue },
       ["@method.call"]           = { fg = f.blue },
-      ["@constructor"]           = { fg = f.cream },
-      ["@parameter"]             = { fg = f.xryellow },
+      ["@constructor"]           = { fg = f.lhgreen },
+      ["@parameter"]             = { fg = f.yellowgreen },
       --------------------------------------------------------
       ---@Literals
       String                     = { fg = f.orangewhite },
@@ -148,8 +151,8 @@ function flip.load()
       Comment                    = { fg = f.base01 },
       --------------------------------------------------------
       ---@punctuation
-      ["@punctuation.bracket"]   = { fg = f.lightblue },
-      ["@punctuation.delimiter"] = { fg = f.lightblue },
+      ["@punctuation.bracket"]   = { fg = f.bluevoilet },
+      ["@punctuation.delimiter"] = { fg = f.bluevoilet },
       --------------------------------------------------------
       ---@Diff
       DiffAdd                    = { bg = f.green },
@@ -192,7 +195,8 @@ function flip.load()
       DashboardShortCut          = { link = 'Comment' },
       --cmp
       CmpItemAbbr                = { fg = f.orangewhite },
-      CmpItemAbbrMatch           = { fg = f.teal },
+      CmpItemAbbrMatch           = { fg = f.blue },
+      CmpItemKind                = { fg = f.aqua }
   }
 
   api.nvim_command("hi clear")
