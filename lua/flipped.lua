@@ -15,21 +15,23 @@ local function flipped()
       red = "#ed556a",
       cream = "#e0d1ad",
       --for variable
-      moonwhite = '#9cb553',
       --blue
       qblue = '#5698c3',
       blue = "#6d90d6",
       lightblue = '#95a6c9',
       --
-      pink = "#f0a1a8",
-      green = "#68945c",
+      pink = "#ef82a0",
+      --
+      applegreen = '#9cb553',
+      green = "#45b787",
+      teal = "#1abc9c",
       ---orange
-      orange = "#de7622",
-      orangeyellow = '#FFA066',
+      orange = '#f0945d',
       orangewhite = '#ddbb99',
       --
-      yellow = "#f4a83a",
-      lightyellow = '#f7e8aa',
+      yellow = "#fbb957",
+      yellowgreen = '#d0deaa',
+      --
       voilet = "#957FB8",
       aqua = "#5cb3cc",
       ---
@@ -81,10 +83,10 @@ function flip.load()
       ---@Identifier
       Identifier                 = { fg = f.cream },
       -- various variable names
-      ["@variable"]              = { fg = f.moonwhite },
+      ["@variable"]              = { fg = f.applegreen },
       --built-in variable names (e.g. `this`)
-      ["@variable.builtin"]      = { fg = f.red, italic = true },
-      Constant                   = { fg = f.yellow },
+      ["@variable.builtin"]      = { fg = f.yellowgreen, italic = true },
+      Constant                   = { fg = f.teal },
       ["@constant.builtin"]      = { link = 'Constant' },
       -- constants defined by the preprocessor
       ["@constant.macro"]        = {},
@@ -102,8 +104,8 @@ function flip.load()
       ["@type.qualifier"]        = { fg = f.voilet },
       --modifiers that affect storage in memory or life-time like C `static`
       ["@storageclass"]          = { fg = f.voilet },
-      ["@field"]                 = { fg = f.orangeyellow },
-      ["@property"]              = { fg = f.orangeyellow },
+      ["@field"]                 = { fg = f.orange },
+      ["@property"]              = { fg = f.orange },
       --------------------------------------------------------
       ---@Keywords
       Keyword                    = { fg = f.voilet },
@@ -136,8 +138,8 @@ function flip.load()
       --------------------------------------------------------
       ---@Literals
       String                     = { fg = f.orangewhite },
-      Number                     = { fg = f.orange },
-      Boolean                    = { fg = f.orange },
+      Number                     = { fg = f.yellow },
+      Boolean                    = { fg = f.yellow },
       Float                      = { link = 'Number' },
       --
       Define                     = { link = 'PreProc' },
@@ -178,15 +180,15 @@ function flip.load()
       GitGutterDelete            = { fg = f.red },
       GitGutterChangeDelete      = { fg = f.red },
       --dashboard
-      DashboardHeader            = { fg = f.orangeyellow },
+      DashboardHeader            = { fg = f.voilet },
       DashboardFooter            = { link = 'Comment' },
       DashboardProjectTitle      = { fg = f.notify_blue },
-      DashboardProjectTitleIcon  = { fg = f.aqua },
-      DashboardProjectIcon       = { fg = f.yellow },
+      DashboardProjectTitleIcon  = { fg = f.teal },
+      DashboardProjectIcon       = { fg = f.orangewhite },
       DashboardMruTitle          = { fg = f.notify_blue },
-      DashboardMruIcon           = { fg = f.aqua },
+      DashboardMruIcon           = { fg = f.teal },
       DashboardFiles             = { fg = f.base04 },
-      DashboardShortCut          = { fg = f.green },
+      DashboardShortCut          = { link = 'Comment' },
       --cmp
       CmpItemAbbr                = { fg = f.orangewhite },
       CmpItemAbbrMatch           = { fg = f.teal },
