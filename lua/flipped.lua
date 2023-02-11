@@ -32,15 +32,13 @@ local function flipped()
       lhgreen = '#92b3a5',
       --
       yellow = "#fbb957",
-      xryellow = '#f7e8aa',
       yellowgreen = '#d0deaa',
       --
       voilet = "#957FB8",
       --
-      ywblue = '#126e82',
       aqua = "#5cb3cc",
       --
-      dlsgrey = '#c4cbcf',
+      dlsgrey = '#bfc6c9',
       ---
       notify_red = "#e6454a",
       notify_yellow = "#f4bc34",
@@ -143,7 +141,7 @@ function flip.load()
       ["@method"]                = { fg = f.blue },
       ["@method.call"]           = { fg = f.blue },
       ["@constructor"]           = { fg = f.lhgreen },
-      ["@parameter"]             = { fg = f.orangewhite },
+      ["@parameter"]             = { fg = f.yellow },
       --------------------------------------------------------
       ---@Literals
       String                     = { fg = f.dlsgrey },
