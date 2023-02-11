@@ -205,8 +205,9 @@ function flip.load()
       CmpItemKind                = { fg = f.aqua },
       --Telescope
       TelescopePromptBorder      = { bg = f.base06, fg = f.base06 },
-      TelescopePromptNormal      = { bg = f.base06 },
+      TelescopePromptNormal      = { bg = f.base06, fg = f.red },
       TelescopeResultsBorder     = { bg = f.base06, fg = f.base06 },
+      TelescopeResultsNormal     = { fg = f.base04 },
       TelescopePreviewBorder     = { bg = f.base06, fg = f.base06 },
       TelescopeSelectionCaret    = { fg = f.yellow },
       TelescopeMatching          = { fg = f.teal },
