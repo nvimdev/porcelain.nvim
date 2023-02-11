@@ -16,7 +16,7 @@ local function flipped()
       cream = "#e0d1ad",
       --for variable
       --blue
-      qblue = '#5698c3',
+      qblue = '#619ac3',
       blue = "#6d90d6",
       bluevoilet = '#95a6c9',
       --
@@ -37,7 +37,10 @@ local function flipped()
       --
       voilet = "#957FB8",
       --
+      ywblue = '#126e82',
       aqua = "#5cb3cc",
+      --
+      dlsgrey = '#c4cbcf',
       ---
       notify_red = "#e6454a",
       notify_yellow = "#f4bc34",
@@ -138,10 +141,10 @@ function flip.load()
       ["@method"]                = { fg = f.blue },
       ["@method.call"]           = { fg = f.blue },
       ["@constructor"]           = { fg = f.lhgreen },
-      ["@parameter"]             = { fg = f.yellowgreen },
+      ["@parameter"]             = { fg = f.orangewhite },
       --------------------------------------------------------
       ---@Literals
-      String                     = { fg = f.orangewhite },
+      String                     = { fg = f.dlsgrey },
       Number                     = { fg = f.yellow },
       Boolean                    = { fg = f.yellow },
       Float                      = { link = 'Number' },
