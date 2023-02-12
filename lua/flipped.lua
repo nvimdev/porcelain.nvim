@@ -33,7 +33,7 @@ local function flipped()
       gryellow = '#f8c387',
       yellowgreen = '#d0deaa',
       --
-      voilet = "#957FB8",
+      voilet = "#917bb5",
       --
       aqua = "#54baba",
       --
@@ -140,7 +140,7 @@ function flip.load()
       ["@method"]                = { fg = f.blue },
       ["@method.call"]           = { fg = f.blue },
       ["@constructor"]           = { fg = f.lhgreen },
-      ["@parameter"]             = { fg = f.dlsgrey },
+      ["@parameter"]             = { fg = f.yellow },
       --------------------------------------------------------
       ---@Literals
       String                     = { fg = f.gryellow },
