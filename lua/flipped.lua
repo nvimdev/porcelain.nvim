@@ -13,7 +13,6 @@ local function flipped()
       --bakcground
       bg = "#1b1b26",
       red = "#ed556a",
-      moonwhite = "#f2e7e5",
       --for variable
       --blue
       qblue = '#619ac3',
@@ -55,7 +54,7 @@ function flip.load()
 
   local groups = {
       --Neovim Relate
-      Normal                     = { fg = f.moonwhite, bg = f.bg },
+      Normal                     = { fg = f.dlsgrey, bg = f.bg },
       --signcolumn
       SignColumn                 = { bg = f.bg },
       --buffer
@@ -226,7 +225,7 @@ function flip.load()
   g.terminal_color_12 = f.notify_blue
   g.terminal_color_13 = f.violet
   g.terminal_color_14 = f.notify_aqua
-  g.terminal_color_15 = f.moonwhite
+  g.terminal_color_15 = f.dlsgrey
 
   api.nvim_command("hi clear")
   opt.background = "dark"
