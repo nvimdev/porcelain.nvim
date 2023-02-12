@@ -144,12 +144,12 @@ function flip.load()
       --------------------------------------------------------
       ---@Literals
       String                     = { fg = f.gryellow },
-      Number                     = { fg = f.yellow },
-      Boolean                    = { fg = f.yellow },
+      Number                     = { fg = f.pink },
+      Boolean                    = { fg = f.pink },
       Float                      = { link = 'Number' },
       --
       Define                     = { link = 'PreProc' },
-      Operator                   = { fg = f.pink },
+      Operator                   = { fg = f.dlsgrey },
       Comment                    = { fg = f.base01 },
       --------------------------------------------------------
       ---@punctuation
