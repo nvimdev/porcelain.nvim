@@ -36,7 +36,7 @@ local function flipped()
       --
       voilet = "#957FB8",
       --
-      aqua = "#5cb3cc",
+      aqua = "#54baba",
       --
       dlsgrey = '#bfc6c9',
       ---
@@ -81,7 +81,7 @@ function flip.load()
       --Error
       ErrorMsg                   = { bg = f.notify_red },
       --Markup
-      TODO                       = { bg = f.falan, fg = f.base02 },
+      TODO                       = { bg = f.blue, fg = f.base02 },
       Conceal                    = { fg = f.falan },
       Error                      = { fg = f.notify_red },
       NonText                    = { link = 'Comment' },
