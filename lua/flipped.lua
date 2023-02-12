@@ -28,10 +28,10 @@ local function flipped()
       teal = "#1abc9c",
       ---orange
       orange = '#f0945d',
-      orangewhite = '#ddbb99',
       lhgreen = '#92b3a5',
       --
       yellow = "#fbb957",
+      gryellow = '#f8c387',
       yellowgreen = '#d0deaa',
       --
       voilet = "#957FB8",
@@ -72,9 +72,9 @@ function flip.load()
       Cursorline                 = { bg = f.base02 },
       CursorLineNr               = { fg = f.qblue },
       --pmen
-      Pmenu                      = { bg = f.base03, fg = f.orangewhite },
+      Pmenu                      = { bg = f.base03, fg = f.dlsgrey },
       PmenuSel                   = { bg = f.yellow, fg = f.base06 },
-      PmenuThumb                 = { bg = "#baadae" },
+      PmenuThumb                 = { bg = f.base02 },
       --statusline
       StatusLine                 = { bg = f.base05 },
       StatusLineNC               = { fg = f.base05, bg = f.base05 },
@@ -141,10 +141,10 @@ function flip.load()
       ["@method"]                = { fg = f.blue },
       ["@method.call"]           = { fg = f.blue },
       ["@constructor"]           = { fg = f.lhgreen },
-      ["@parameter"]             = { fg = f.yellow },
+      ["@parameter"]             = { fg = f.dlsgrey },
       --------------------------------------------------------
       ---@Literals
-      String                     = { fg = f.dlsgrey },
+      String                     = { fg = f.gryellow },
       Number                     = { fg = f.yellow },
       Boolean                    = { fg = f.yellow },
       Float                      = { link = 'Number' },
