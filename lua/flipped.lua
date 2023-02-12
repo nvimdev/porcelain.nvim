@@ -13,6 +13,7 @@ local function flipped()
       --bakcground
       bg = "#1b1b26",
       red = "#ed556a",
+      lbred = '#ea517f',
       --for variable
       --blue
       qblue = '#619ac3',
@@ -91,7 +92,7 @@ function flip.load()
       -- various variable names
       ["@variable"]              = { fg = f.applegreen },
       --built-in variable names (e.g. `this`)
-      ["@variable.builtin"]      = { fg = f.yellowgreen, italic = true },
+      ["@variable.builtin"]      = { fg = '#b9dec9', italic = true },
       Constant                   = { fg = f.teal },
       ["@constant.builtin"]      = { link = 'Constant' },
       -- constants defined by the preprocessor
