@@ -197,9 +197,9 @@ function flip.load()
       DashboardShortCut          = { link = 'Comment' },
       DashboardShortCutIcon      = { link = '@variable' },
       --cmp
-      CmpItemAbbr                = { fg = f.orangewhite },
-      CmpItemAbbrMatch           = { fg = f.blue },
-      CmpItemKind                = { fg = f.aqua },
+      CmpItemAbbr                = { fg = f.dlsgrey },
+      CmpItemAbbrMatch           = { fg = f.teal },
+      CmpItemKind                = { fg = f.blue },
       --Telescope
       TelescopePromptBorder      = { bg = f.base06, fg = f.base06 },
       TelescopePromptNormal      = { bg = f.base06, fg = f.red },
