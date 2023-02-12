@@ -8,7 +8,7 @@ local function flipped()
     base02 = '#363646',
     base03 = '#45465e',
     base04 = '#7C81A4',
-    base05 = '#21212e',
+    base05 = '#151626',
     base06 = '#16161D',
     --bakcground
     bg = '#1b1b26',
@@ -74,6 +74,7 @@ function flip.load()
     Pmenu = { bg = f.base03, fg = f.dlsgrey },
     PmenuSel = { bg = f.yellow, fg = f.base06 },
     PmenuThumb = { bg = f.base02 },
+    WildMenu = { link = 'pmenu' },
     --statusline
     StatusLine = { bg = f.base05 },
     StatusLineNC = { fg = f.base05, bg = f.base05 },
