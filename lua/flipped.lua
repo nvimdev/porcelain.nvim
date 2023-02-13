@@ -12,7 +12,8 @@ local function flipped()
     base06 = '#16161D',
     --bakcground
     bg = '#1b1b26',
-    red = '#ed556a',
+    red = '#BE3455',
+    dorange = '#de6868',
     --for variable
     --blue
     qblue = '#619ac3',
@@ -22,7 +23,8 @@ local function flipped()
     pink = '#ef82a0',
     --
     applegreen = '#9cb553',
-    green = '#229453',
+    -- for sign
+    green = '#66c18c',
     --
     teal = '#1abc9c',
     ---orange
@@ -31,11 +33,11 @@ local function flipped()
     --
     yellow = '#fbb957',
     gryellow = '#f8c387',
-    yellowgreen = '#d0deaa',
     --
     voilet = '#917bb5',
+    yjvoilet = '#525288',
     --
-    aqua = '#54baba',
+    aqua = '#50b3b2',
     --
     dlsgrey = '#bfc6c9',
     ---
@@ -43,7 +45,6 @@ local function flipped()
     notify_yellow = '#f4bc34',
     notify_blue = '#1C95FC',
     notify_aqua = '#46D9F2',
-    --orange for operator
     bluelnum = '#294161',
     non = 'NONE',
   }
@@ -78,10 +79,10 @@ function flip.load()
     --statusline
     StatusLine = { bg = f.base05 },
     StatusLineNC = { fg = f.base05, bg = f.base05 },
-    WinBar = { link = 'StatusLine' },
-    WinBarNC = { link = 'StatusLineNC' },
+    WinBar = { bg = f.non },
+    WinBarNC = { bg = f.non },
     --Error
-    ErrorMsg = { bg = f.notify_red },
+    ErrorMsg = { fg = f.notify_red },
     --Markup
     TODO = { bg = f.blue, fg = f.base02 },
     Conceal = { fg = f.green },
@@ -90,11 +91,20 @@ function flip.load()
     --Float
     FloatBorder = { fg = f.blue },
     FloatNormal = { link = 'Normal' },
+    FloatShadow = { bg = f.base06 },
     --Fold
-    Fold = { fg = f.base03 },
+    Folded = { fg = f.yjvoilet },
     FoldColumn = { link = 'SignColumn' },
     --Spell
     SpellBad = { fg = f.notify_red },
+    SpellCap = { undercurl = true, sp = f.notify_blue },
+    SpellRare = { undercurl = true, sp = f.voilet },
+    SpellLocal = { undercurl = true, sp = f.notify_aqua },
+    --Msg
+    WarningMsg = { fg = f.notify_red },
+    MoreMsg = { fg = f.green },
+    --Internal
+    NvimInternalError = { fg = f.notify_red },
     --------------------------------------------------------
     ---@Langauge Relate
     ---@Identifier
@@ -102,7 +112,7 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.applegreen },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = '#b9dec9', italic = true },
+    ['@variable.builtin'] = { fg = f.red, italic = true },
     Constant = { fg = f.teal },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
@@ -160,7 +170,7 @@ function flip.load()
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
-    Operator = { fg = f.dlsgrey },
+    Operator = { fg = f.dorange },
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
@@ -169,8 +179,9 @@ function flip.load()
     --------------------------------------------------------
     ---@Diff
     DiffAdd = { fg = f.green },
-    DifChange = { fg = f.blue },
-    DifDelete = { fg = f.red },
+    DiffChange = { fg = f.blue },
+    DiffDelete = { fg = f.red },
+    DiffText = { fg = f.red, bold = true },
     diffAdded = { fg = f.green },
     diffRemoved = { fg = f.red },
     diffChanged = { fg = f.blue },
