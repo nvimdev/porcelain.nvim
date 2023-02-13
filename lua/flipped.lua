@@ -85,6 +85,9 @@ function flip.load()
     Conceal = { fg = f.falan },
     Error = { fg = f.notify_red },
     NonText = { link = 'Comment' },
+    --Float
+    FloatBorder = { fg = f.blue },
+    FloatNormal = { link = 'Normal' },
     --------------------------------------------------------
     ---@Langauge Relate
     ---@Identifier
@@ -158,9 +161,9 @@ function flip.load()
     ['@punctuation.delimiter'] = { fg = f.bluevoilet },
     --------------------------------------------------------
     ---@Diff
-    DiffAdd = { bg = f.green },
-    DifChange = { bg = f.blue },
-    DifDelete = { bg = f.red },
+    DiffAdd = { fg = f.green },
+    DifChange = { fg = f.blue },
+    DifDelete = { fg = f.red },
     diffAdded = { fg = f.green },
     diffRemoved = { fg = f.red },
     diffChanged = { fg = f.blue },
