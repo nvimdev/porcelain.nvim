@@ -191,7 +191,7 @@ function flip.load()
     DiagnosticUnderlineWarn = { undercurl = true, sp = f.notify_yellow },
     DiagnosticUnderlineInfo = { undercurl = true, sp = f.notify_blue },
     DiagnosticUnderlineHint = { undercurl = true, sp = f.notify_aqua },
-    --plugin
+    ---@plugin
     GitGutterAdd = { fg = f.green },
     GitGutterChange = { fg = f.blue },
     GitGutterDelete = { fg = f.red },
