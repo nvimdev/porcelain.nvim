@@ -22,7 +22,7 @@ local function flipped()
     pink = '#ef82a0',
     --
     applegreen = '#9cb553',
-    green = '#45b787',
+    green = '#41ae3c',
     --
     teal = '#1abc9c',
     ---orange
