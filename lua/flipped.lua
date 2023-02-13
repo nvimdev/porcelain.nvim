@@ -110,7 +110,7 @@ function flip.load()
     --modules or namespaces
     ['@namespace'] = { link = 'Include' },
     --symbols or atoms
-    ['@symbol'] = {},
+    -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
     Type = { fg = f.aqua },
