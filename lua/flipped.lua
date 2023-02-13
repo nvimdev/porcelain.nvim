@@ -78,16 +78,23 @@ function flip.load()
     --statusline
     StatusLine = { bg = f.base05 },
     StatusLineNC = { fg = f.base05, bg = f.base05 },
+    WinBar = { link = 'StatusLine' },
+    WinBarNC = { link = 'StatusLineNC' },
     --Error
     ErrorMsg = { bg = f.notify_red },
     --Markup
     TODO = { bg = f.blue, fg = f.base02 },
-    Conceal = { fg = f.falan },
+    Conceal = { fg = f.green },
     Error = { fg = f.notify_red },
     NonText = { link = 'Comment' },
     --Float
     FloatBorder = { fg = f.blue },
     FloatNormal = { link = 'Normal' },
+    --Fold
+    Fold = { fg = f.base03 },
+    FoldColumn = { link = 'SignColumn' },
+    --Spell
+    SpellBad = { fg = f.notify_red },
     --------------------------------------------------------
     ---@Langauge Relate
     ---@Identifier
