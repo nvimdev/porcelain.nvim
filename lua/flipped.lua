@@ -12,7 +12,7 @@ local function flipped()
     base06 = '#16161D',
     --bakcground
     bg = '#1b1b26',
-    red = '#BE3455',
+    red = '#e6454a',
     dorange = '#de6868',
     --for variable
     --blue
@@ -41,7 +41,7 @@ local function flipped()
     --
     dlsgrey = '#bfc6c9',
     ---
-    notify_red = '#e6454a',
+    notify_red = '#BE3455',
     notify_yellow = '#f4bc34',
     notify_blue = '#1C95FC',
     notify_aqua = '#46D9F2',
