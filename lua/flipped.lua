@@ -13,7 +13,7 @@ local function flipped()
     --bakcground
     bg = '#1b1b26',
     --
-    red = '#e6454a',
+    red = '#ef475d',
     dred = '#de6868',
     --for variable
     --blue
