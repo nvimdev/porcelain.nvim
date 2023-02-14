@@ -211,9 +211,9 @@ function flip.load()
     --dashboard
     DashboardHeader = { fg = f.voilet },
     DashboardFooter = { link = 'Comment' },
-    DashboardProjectTitle = { fg = f.blue },
-    DashboardProjectTitleIcon = { fg = f.qblue },
-    DashboardProjectIcon = { fg = f.bluevoilet },
+    DashboardProjectTitle = { fg = f.aqua, bold = true },
+    DashboardProjectTitleIcon = { fg = f.green },
+    DashboardProjectIcon = { fg = f.blue },
     DashboardMruTitle = { link = 'DashboardProjectTitle' },
     DashboardMruIcon = { link = 'DashboardProjectTitleIcon' },
     DashboardFiles = { fg = f.base04 },
