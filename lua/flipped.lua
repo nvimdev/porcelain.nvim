@@ -32,12 +32,12 @@ local function flipped()
     lhgreen = '#92b3a5',
     --
     yellow = '#fbb957',
-    gryellow = '#f8c387',
+    gryellow = '#e0b380',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
     --
-    aqua = '#50b3b2',
+    aqua = '#5cacbf',
     --
     dlsgrey = '#bfc6c9',
     ---
@@ -144,7 +144,7 @@ function flip.load()
     --for while
     Repeat = { fg = f.voilet },
     Debug = { fg = f.red },
-    Label = { fg = f.pink },
+    Label = { fg = f.aqua },
     Include = { link = 'PreProc' },
     Exception = { fg = f.pink },
     Statement = { fg = f.orange },
