@@ -13,7 +13,7 @@ local function flipped()
     --bakcground
     bg = '#1b1b26',
     red = '#e6454a',
-    dorange = '#de6868',
+    dred = '#de6868',
     --for variable
     --blue
     qblue = '#619ac3',
@@ -170,7 +170,7 @@ function flip.load()
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
-    Operator = { fg = f.dorange },
+    Operator = { fg = f.dred },
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
