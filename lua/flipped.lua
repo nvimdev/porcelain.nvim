@@ -17,12 +17,12 @@ local function flipped()
     --for variable
     --blue
     qblue = '#619ac3',
-    blue = '#6d90d6',
+    blue = '#668ad1',
     bluevoilet = '#95a6c9',
     --
     pink = '#ef82a0',
     --
-    applegreen = '#9cb553',
+    applegreen = '#90a650',
     -- for sign
     green = '#66c18c',
     --
