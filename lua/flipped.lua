@@ -12,6 +12,7 @@ local function flipped()
     base06 = '#16161D',
     --bakcground
     bg = '#1b1b26',
+    --
     red = '#e6454a',
     dred = '#de6868',
     --for variable
@@ -210,14 +211,14 @@ function flip.load()
     --dashboard
     DashboardHeader = { fg = f.voilet },
     DashboardFooter = { link = 'Comment' },
-    DashboardProjectTitle = { fg = f.yellow },
-    DashboardProjectTitleIcon = { fg = f.blue },
-    DashboardProjectIcon = { fg = f.orange },
-    DashboardMruTitle = { fg = f.yellow },
-    DashboardMruIcon = { fg = f.blue },
+    DashboardProjectTitle = { fg = f.blue },
+    DashboardProjectTitleIcon = { fg = f.qblue },
+    DashboardProjectIcon = { fg = f.bluevoilet },
+    DashboardMruTitle = { link = 'DashboardProjectTitle' },
+    DashboardMruIcon = { link = 'DashboardProjectTitleIcon' },
     DashboardFiles = { fg = f.base04 },
     DashboardShortCut = { link = 'Comment' },
-    DashboardShortCutIcon = { link = '@variable' },
+    DashboardShortCutIcon = { link = '@field' },
     --cmp
     CmpItemAbbr = { fg = f.dlsgrey },
     CmpItemAbbrMatch = { fg = f.teal },
