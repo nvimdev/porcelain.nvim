@@ -68,7 +68,7 @@ function flip.load()
     Whitespace = { fg = f.base02 },
     --window
     VertSplit = { fg = f.base02 },
-    Title = { fg = f.orange },
+    Title = { fg = f.yellow },
     --cursorline
     Cursorline = { bg = f.base02 },
     CursorLineNr = { fg = f.qblue },
@@ -76,6 +76,7 @@ function flip.load()
     Pmenu = { bg = f.base03, fg = f.dlsgrey },
     PmenuSel = { bg = f.yellow, fg = f.base06 },
     PmenuThumb = { bg = f.base02 },
+    PmenuMatch = { bg = f.base03, fg = f.teal },
     WildMenu = { link = 'pmenu' },
     --statusline
     StatusLine = { bg = f.base05 },
@@ -106,6 +107,7 @@ function flip.load()
     MoreMsg = { fg = f.green },
     --Internal
     NvimInternalError = { fg = f.notify_red },
+    Directory = { fg = f.bluevoilet },
     --------------------------------------------------------
     ---@Langauge Relate
     ---@Identifier
@@ -175,8 +177,8 @@ function flip.load()
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
-    ['@punctuation.bracket'] = { fg = f.bluevoilet },
-    ['@punctuation.delimiter'] = { fg = f.bluevoilet },
+    ['@punctuation.bracket'] = { fg = '#b7ae8f' },
+    ['@punctuation.delimiter'] = { fg = '#b7ae8f' },
     --------------------------------------------------------
     ---@Diff
     DiffAdd = { fg = f.green },
@@ -231,6 +233,8 @@ function flip.load()
     TelescopePreviewBorder = { bg = f.base06, fg = f.base06 },
     TelescopeSelectionCaret = { fg = f.yellow },
     TelescopeMatching = { fg = f.teal },
+    --CursorWord
+    CursorWord = { bg = f.base02 },
   }
 
   g.terminal_color_0 = f.bg
