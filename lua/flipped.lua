@@ -19,7 +19,6 @@ local function flipped()
     --blue
     qblue = '#619ac3',
     blue = '#668ad1',
-    bluevoilet = '#95a6c9',
     --
     pink = '#ef82a0',
     --
@@ -39,7 +38,7 @@ local function flipped()
     yjvoilet = '#525288',
     danlanzi = '#9da0c9',
     --
-    aqua = '#65b0c7',
+    aqua = '#5caebf',
     --
     dlsgrey = '#bfc6c9',
     ---
@@ -107,7 +106,7 @@ function flip.load()
     MoreMsg = { fg = f.green },
     --Internal
     NvimInternalError = { fg = f.notify_red },
-    Directory = { fg = f.bluevoilet },
+    Directory = { fg = f.blue },
     --------------------------------------------------------
     ---@Langauge Relate
     ---@Identifier
@@ -177,8 +176,8 @@ function flip.load()
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
-    ['@punctuation.bracket'] = { fg = '#b7ae8f' },
-    ['@punctuation.delimiter'] = { fg = '#b7ae8f' },
+    ['@punctuation.bracket'] = { fg = '#b6a476' },
+    ['@punctuation.delimiter'] = { fg = '#b6a476' },
     --------------------------------------------------------
     ---@Diff
     DiffAdd = { fg = f.green },
