@@ -26,19 +26,20 @@ local function flipped()
     applegreen = '#90a650',
     -- for sign
     green = '#66c18c',
+    wuzhigreen = '#69a794',
+    lhgreen = '#92b3a5',
     --
-    teal = '#1abc9c',
     ---orange
     orange = '#f0945d',
-    lhgreen = '#92b3a5',
     --
     yellow = '#fbb957',
     gryellow = '#e0b380',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
+    danlanzi = '#9da0c9',
     --
-    aqua = '#5cacbf',
+    aqua = '#65b0c7',
     --
     dlsgrey = '#bfc6c9',
     ---
@@ -76,7 +77,6 @@ function flip.load()
     Pmenu = { bg = f.base03, fg = f.dlsgrey },
     PmenuSel = { bg = f.yellow, fg = f.base06 },
     PmenuThumb = { bg = f.base02 },
-    PmenuMatch = { bg = f.base03, fg = f.teal },
     WildMenu = { link = 'pmenu' },
     --statusline
     StatusLine = { bg = f.base05 },
@@ -116,7 +116,7 @@ function flip.load()
     ['@variable'] = { fg = f.applegreen },
     --built-in variable names (e.g. `this`)
     ['@variable.builtin'] = { fg = f.red, italic = true },
-    Constant = { fg = f.teal },
+    Constant = { fg = f.wuzhigreen },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
     ['@constant.macro'] = {},
@@ -164,7 +164,7 @@ function flip.load()
     ['@method'] = { fg = f.blue },
     ['@method.call'] = { fg = f.blue },
     ['@constructor'] = { fg = f.lhgreen },
-    ['@parameter'] = { fg = f.yellow },
+    ['@parameter'] = { fg = f.dred },
     --------------------------------------------------------
     ---@Literals
     String = { fg = f.gryellow },
@@ -173,7 +173,7 @@ function flip.load()
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
-    Operator = { fg = f.dred },
+    Operator = { fg = f.danlanzi },
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
@@ -223,7 +223,7 @@ function flip.load()
     DashboardShortCutIcon = { link = '@field' },
     --cmp
     CmpItemAbbr = { fg = f.dlsgrey },
-    CmpItemAbbrMatch = { fg = f.teal },
+    CmpItemAbbrMatch = { fg = f.green },
     CmpItemKind = { fg = f.blue },
     --Telescope
     TelescopePromptBorder = { bg = f.base06, fg = f.base06 },
@@ -232,7 +232,7 @@ function flip.load()
     TelescopeResultsNormal = { fg = f.base04 },
     TelescopePreviewBorder = { bg = f.base06, fg = f.base06 },
     TelescopeSelectionCaret = { fg = f.yellow },
-    TelescopeMatching = { fg = f.teal },
+    TelescopeMatching = { fg = f.green },
     --CursorWord
     CursorWord = { bg = f.base02 },
   }
