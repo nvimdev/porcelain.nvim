@@ -72,10 +72,14 @@ function flip.load()
     --cursorline
     Cursorline = { bg = f.base02 },
     CursorLineNr = { fg = f.qblue },
-    --pmen
+    --pmenu
     Pmenu = { bg = f.base03, fg = f.dlsgrey },
     PmenuSel = { bg = f.yellow, fg = f.base06 },
     PmenuThumb = { bg = f.base02 },
+    PmenuKind = { bg = f.base03, fg = f.blue },
+    PmenuKindSel = { link = 'PmenuSel' },
+    PmenuExtra = { link = 'Pmenu' },
+    PmenuExtraSel = { link = 'PmenuSel' },
     WildMenu = { link = 'pmenu' },
     --statusline
     StatusLine = { bg = f.base05 },
