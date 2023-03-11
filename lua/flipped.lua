@@ -13,6 +13,8 @@ local function flipped()
     --bakcground
     bg = '#1b1b26',
     --
+    fg = '#b2bbbe',
+    --
     red = '#ef475d',
     dred = '#de6868',
     --for variable
@@ -40,7 +42,7 @@ local function flipped()
     --
     aqua = '#5caebf',
     --
-    dlsgrey = '#bfc6c9',
+    manaohui = '#cfccc9',
     ---
     notify_red = '#BE3455',
     notify_yellow = '#f4bc34',
@@ -56,7 +58,7 @@ function flip.load()
 
   local groups = {
     --Neovim Relate
-    Normal = { fg = f.dlsgrey, bg = f.bg },
+    Normal = { fg = f.fg, bg = f.bg },
     --signcolumn
     SignColumn = { bg = f.bg },
     --buffer
@@ -73,7 +75,7 @@ function flip.load()
     Cursorline = { bg = f.base02 },
     CursorLineNr = { fg = f.qblue },
     --pmenu
-    Pmenu = { bg = f.base03, fg = f.dlsgrey },
+    Pmenu = { bg = f.base03, fg = f.fg },
     PmenuSel = { bg = f.yellow, fg = f.base06 },
     PmenuThumb = { bg = f.base02 },
     PmenuKind = { bg = f.base03, fg = f.blue },
@@ -176,7 +178,7 @@ function flip.load()
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
-    Operator = { fg = f.danlanzi },
+    Operator = { fg = f.manaohui },
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
@@ -225,7 +227,7 @@ function flip.load()
     DashboardShortCut = { link = 'Comment' },
     DashboardShortCutIcon = { link = '@field' },
     --cmp
-    CmpItemAbbr = { fg = f.dlsgrey },
+    CmpItemAbbr = { fg = f.fg },
     CmpItemAbbrMatch = { fg = f.green },
     CmpItemKind = { fg = f.blue },
     --Telescope
@@ -255,7 +257,7 @@ function flip.load()
   g.terminal_color_12 = f.notify_blue
   g.terminal_color_13 = f.violet
   g.terminal_color_14 = f.notify_aqua
-  g.terminal_color_15 = f.dlsgrey
+  g.terminal_color_15 = f.manaohui
 
   api.nvim_command('hi clear')
   opt.background = 'dark'
