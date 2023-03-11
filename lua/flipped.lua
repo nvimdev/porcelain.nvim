@@ -40,7 +40,7 @@ local function flipped()
     yjvoilet = '#525288',
     danlanzi = '#9da0c9',
     --
-    aqua = '#5caebf',
+    aqua = '#53a9bd',
     --
     manaohui = '#cfccc9',
     ---
