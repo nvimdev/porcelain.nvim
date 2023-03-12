@@ -118,7 +118,7 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.applegreen },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = '#d276a3', italic = true },
+    ['@variable.builtin'] = { fg = '#2c9678', italic = true },
     Constant = { fg = f.lhgreen },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
@@ -180,8 +180,8 @@ function flip.load()
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
-    ['@punctuation.bracket'] = { fg = '#97846c' },
-    ['@punctuation.delimiter'] = { fg = '#97846c' },
+    ['@punctuation.bracket'] = { fg = '#8a988e' },
+    ['@punctuation.delimiter'] = { fg = '#8a988e' },
     --------------------------------------------------------
     ---@Diff
     DiffAdd = { fg = f.green },
