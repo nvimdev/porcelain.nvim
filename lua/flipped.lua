@@ -15,11 +15,10 @@ local function flipped()
     --
     fg = '#b2bbbe',
     --
-    red = '#ef475d',
-    dred = '#de6868',
+    dred = '#ed556a',
     --for variable
     --blue
-    qblue = '#619ac3',
+    qblue = '#158bb8',
     blue = '#668ad1',
     --
     pink = '#ef82a0',
@@ -27,13 +26,12 @@ local function flipped()
     applegreen = '#90a650',
     -- for sign
     green = '#66c18c',
-    wuzhigreen = '#69a794',
     lhgreen = '#92b3a5',
     --
     ---orange
     orange = '#f0945d',
     --
-    yellow = '#fbb957',
+    yellow = '#e8ac51',
     gryellow = '#e0b380',
     --
     voilet = '#917bb5',
@@ -120,8 +118,8 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.applegreen },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = f.red, italic = true },
-    Constant = { fg = f.wuzhigreen },
+    ['@variable.builtin'] = { fg = '#d276a3', italic = true },
+    Constant = { fg = f.lhgreen },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
     ['@constant.macro'] = {},
@@ -145,7 +143,7 @@ function flip.load()
     ---@Keywords
     Keyword = { fg = f.voilet },
     ['@keyword.function'] = { fg = f.voilet },
-    ['@keyword.return'] = { fg = f.red, italic = true },
+    ['@keyword.return'] = { fg = f.dred, italic = true },
     ['@keyword.operator'] = { link = 'Operator' },
     --if else
     Conditional = { fg = f.voilet },
@@ -169,7 +167,7 @@ function flip.load()
     ['@method'] = { fg = f.blue },
     ['@method.call'] = { fg = f.blue },
     ['@constructor'] = { fg = f.lhgreen },
-    ['@parameter'] = { fg = f.dred },
+    ['@parameter'] = { fg = f.yellow },
     --------------------------------------------------------
     ---@Literals
     String = { fg = f.gryellow },
@@ -182,8 +180,8 @@ function flip.load()
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
-    ['@punctuation.bracket'] = { fg = '#b6a476' },
-    ['@punctuation.delimiter'] = { fg = '#b6a476' },
+    ['@punctuation.bracket'] = { fg = '#97846c' },
+    ['@punctuation.delimiter'] = { fg = '#97846c' },
     --------------------------------------------------------
     ---@Diff
     DiffAdd = { fg = f.green },
