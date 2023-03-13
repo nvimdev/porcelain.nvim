@@ -128,6 +128,7 @@ function flip.load()
     ['@namespace'] = { link = 'Include' },
     --symbols or atoms
     -- ['@symbol'] = {},
+    ['@nospell'] = { fg = f.qfgreen },
     --------------------------------------------------------
     ---@Types
     Type = { fg = f.aqua },
