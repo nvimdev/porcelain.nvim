@@ -32,7 +32,7 @@ local function flipped()
     orange = '#f0945d',
     --
     yellow = '#e8ac51',
-    cream = '#c9c5ad',
+    cream = '#c2bd9f',
     mgyellow = '#e6c384',
     --
     voilet = '#917bb5',
@@ -139,8 +139,8 @@ function flip.load()
     ['@type.qualifier'] = { fg = f.voilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
     ['@storageclass'] = { fg = f.voilet },
-    ['@field'] = { fg = f.mgyellow },
-    ['@property'] = { fg = f.mgyellow },
+    ['@field'] = { fg = f.applegreen },
+    ['@property'] = { fg = f.applegreen },
     --------------------------------------------------------
     ---@Keywords
     Keyword = { fg = f.voilet },
@@ -172,7 +172,7 @@ function flip.load()
     ['@parameter'] = { fg = f.yellow },
     --------------------------------------------------------
     ---@Literals
-    String = { fg = f.applegreen },
+    String = { fg = f.mgyellow },
     Number = { fg = f.pink },
     Boolean = { fg = f.pink },
     Float = { link = 'Number' },
