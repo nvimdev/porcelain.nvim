@@ -16,9 +16,8 @@ local function flipped()
     fg = '#b2bbbe',
     --
     dred = '#ed556a',
-    --for variable
     --blue
-    qblue = '#158bb8',
+    qblue = '#4491d4',
     blue = '#668ad1',
     --
     pink = '#ef82a0',
@@ -27,12 +26,13 @@ local function flipped()
     -- for sign
     green = '#66c18c',
     lhgreen = '#92b3a5',
+    qfgreen = '#2c9678',
     --
     ---orange
     orange = '#f0945d',
     --
     yellow = '#e8ac51',
-    gryellow = '#e0b380',
+    mgyellow = '#b5a560',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
@@ -40,7 +40,7 @@ local function flipped()
     --
     aqua = '#53a9bd',
     --
-    manaohui = '#cfccc9',
+    manaohui = '#ccc9c6',
     ---
     notify_red = '#BE3455',
     notify_yellow = '#f4bc34',
@@ -56,7 +56,7 @@ function flip.load()
 
   local groups = {
     --Neovim Relate
-    Normal = { fg = f.fg, bg = f.bg },
+    Normal = { fg = f.manaohui, bg = f.bg },
     --signcolumn
     SignColumn = { bg = f.bg },
     --buffer
@@ -73,7 +73,7 @@ function flip.load()
     Cursorline = { bg = f.base02 },
     CursorLineNr = { fg = f.qblue },
     --pmenu
-    Pmenu = { bg = f.base03, fg = f.fg },
+    Pmenu = { bg = f.base03, fg = f.manaohui },
     PmenuSel = { bg = f.yellow, fg = f.base06 },
     PmenuThumb = { bg = f.base02 },
     PmenuKind = { bg = f.base03, fg = f.blue },
@@ -118,8 +118,8 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.applegreen },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = '#2c9678', italic = true },
-    Constant = { fg = f.lhgreen },
+    ['@variable.builtin'] = { fg = f.dred, italic = true },
+    Constant = { fg = f.qfgreen },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
     ['@constant.macro'] = {},
@@ -134,7 +134,7 @@ function flip.load()
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
     --type qualifiers (e.g. `const`)
-    ['@type.qualifier'] = { fg = f.voilet },
+    ['@type.qualifier'] = { fg = f.voilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
     ['@storageclass'] = { fg = f.voilet },
     ['@field'] = { fg = f.orange },
@@ -170,7 +170,7 @@ function flip.load()
     ['@parameter'] = { fg = f.yellow },
     --------------------------------------------------------
     ---@Literals
-    String = { fg = f.gryellow },
+    String = { fg = f.mgyellow },
     Number = { fg = f.pink },
     Boolean = { fg = f.pink },
     Float = { link = 'Number' },
@@ -225,12 +225,12 @@ function flip.load()
     DashboardShortCut = { link = 'Comment' },
     DashboardShortCutIcon = { link = '@field' },
     --cmp
-    CmpItemAbbr = { fg = f.fg },
+    CmpItemAbbr = { fg = f.manaohui },
     CmpItemAbbrMatch = { fg = f.green },
     CmpItemKind = { fg = f.blue },
     --Telescope
     TelescopePromptBorder = { bg = f.base06, fg = f.base06 },
-    TelescopePromptNormal = { bg = f.base06, fg = f.red },
+    TelescopePromptNormal = { bg = f.base06, fg = f.dred },
     TelescopeResultsBorder = { bg = f.base06, fg = f.base06 },
     TelescopeResultsNormal = { fg = f.base04 },
     TelescopePreviewBorder = { bg = f.base06, fg = f.base06 },
