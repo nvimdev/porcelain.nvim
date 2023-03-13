@@ -11,7 +11,7 @@ local function flipped()
     base05 = '#151626',
     base06 = '#16161D',
     --bakcground
-    bg = '#1b1b26',
+    bg = '#1e1e2b',
     --
     fg = '#b2bbbe',
     --
@@ -32,7 +32,8 @@ local function flipped()
     orange = '#f0945d',
     --
     yellow = '#e8ac51',
-    mgyellow = '#b5a560',
+    cream = '#c9c5ad',
+    mgyellow = '#e6c384',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
@@ -116,10 +117,10 @@ function flip.load()
     ---@Identifier
     Identifier = { fg = f.applegreen },
     -- various variable names
-    ['@variable'] = { fg = f.applegreen },
+    ['@variable'] = { fg = f.cream },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = f.dred, italic = true },
-    Constant = { fg = f.qfgreen },
+    ['@variable.builtin'] = { fg = '#E46876' },
+    Constant = { fg = f.orange },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
     ['@constant.macro'] = {},
@@ -137,8 +138,8 @@ function flip.load()
     ['@type.qualifier'] = { fg = f.voilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
     ['@storageclass'] = { fg = f.voilet },
-    ['@field'] = { fg = f.orange },
-    ['@property'] = { fg = f.orange },
+    ['@field'] = { fg = f.mgyellow },
+    ['@property'] = { fg = f.mgyellow },
     --------------------------------------------------------
     ---@Keywords
     Keyword = { fg = f.voilet },
@@ -170,7 +171,7 @@ function flip.load()
     ['@parameter'] = { fg = f.yellow },
     --------------------------------------------------------
     ---@Literals
-    String = { fg = f.mgyellow },
+    String = { fg = f.applegreen },
     Number = { fg = f.pink },
     Boolean = { fg = f.pink },
     Float = { link = 'Number' },
