@@ -37,7 +37,6 @@ local function flipped()
     voilet = '#917bb5',
     yjvoilet = '#525288',
     danlanzi = '#9da0c9',
-    luolanzi = '#c08eaf',
     --
     aqua = '#55a6bd',
     --
@@ -169,7 +168,7 @@ function flip.load()
     ['@method'] = { fg = f.blue },
     ['@method.call'] = { fg = f.blue },
     ['@constructor'] = { fg = f.lhgreen },
-    ['@parameter'] = { fg = f.luolanzi },
+    ['@parameter'] = { fg = '#eea08c' },
     --------------------------------------------------------
     ---@Literals
     String = { fg = f.applegreen },
@@ -213,8 +212,8 @@ function flip.load()
     ---@plugin
     GitGutterAdd = { fg = f.green },
     GitGutterChange = { fg = f.blue },
-    GitGutterDelete = { fg = f.red },
-    GitGutterChangeDelete = { fg = f.red },
+    GitGutterDelete = { fg = f.notify_red },
+    GitGutterChangeDelete = { fg = f.notify_red },
     --dashboard
     DashboardHeader = { fg = f.voilet },
     DashboardFooter = { link = 'Comment' },
