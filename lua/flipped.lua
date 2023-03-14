@@ -31,7 +31,7 @@ local function flipped()
     ---orange
     orange = '#f0945d',
     --
-    yellow = '#c7ae5f',
+    yellow = '#e0b046',
     cream = '#c2bd9f',
     --
     voilet = '#917bb5',
@@ -127,7 +127,6 @@ function flip.load()
     ['@namespace'] = { link = 'Include' },
     --symbols or atoms
     -- ['@symbol'] = {},
-    ['@nospell'] = { fg = f.qfgreen },
     --------------------------------------------------------
     ---@Types
     Type = { fg = f.qfgreen },
