@@ -22,9 +22,8 @@ local function flipped()
     --
     applegreen = '#90a650',
     -- for sign
-    green = '#66c18c',
     wzgreen = '#69a794',
-    qfgreen = '#509987',
+    green = '#509987',
     --
     ---orange
     orange = '#f0945d',
@@ -127,7 +126,7 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.qfgreen },
+    Type = { fg = f.wzgreen },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
@@ -258,7 +257,7 @@ function flip.load()
   api.nvim_command('hi clear')
   opt.background = 'dark'
   opt.termguicolors = true
-  vim.g.colors_name = 'flipped'
+  vim.g.colors_name = 'porcelain'
   for group, conf in pairs(groups) do
     api.nvim_set_hl(0, group, conf)
   end
