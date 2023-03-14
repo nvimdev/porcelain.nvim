@@ -11,7 +11,7 @@ local function flipped()
     base05 = '#151626',
     base06 = '#16161D',
     --bakcground
-    bg = '#1e1e2b',
+    bg = '#131824',
     --
     fg = '#b2bbbe',
     --
@@ -26,20 +26,20 @@ local function flipped()
     -- for sign
     green = '#66c18c',
     lhgreen = '#92b3a5',
-    qfgreen = '#2c9678',
+    qfgreen = '#509987',
     --
     ---orange
     orange = '#f0945d',
     --
-    yellow = '#e8ac51',
+    yellow = '#c7ae5f',
     cream = '#c2bd9f',
-    mgyellow = '#e6c384',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
     danlanzi = '#9da0c9',
+    luolanzi = '#c08eaf',
     --
-    aqua = '#499fb3',
+    aqua = '#55a6bd',
     --
     manaohui = '#ccc9c6',
     ---
@@ -131,7 +131,7 @@ function flip.load()
     ['@nospell'] = { fg = f.qfgreen },
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.aqua },
+    Type = { fg = f.qfgreen },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
@@ -139,8 +139,8 @@ function flip.load()
     ['@type.qualifier'] = { fg = f.voilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
     ['@storageclass'] = { fg = f.voilet },
-    ['@field'] = { fg = f.applegreen },
-    ['@property'] = { fg = f.applegreen },
+    ['@field'] = { fg = f.aqua },
+    ['@property'] = { fg = f.aqua },
     --------------------------------------------------------
     ---@Keywords
     Keyword = { fg = f.voilet },
@@ -169,16 +169,16 @@ function flip.load()
     ['@method'] = { fg = f.blue },
     ['@method.call'] = { fg = f.blue },
     ['@constructor'] = { fg = f.lhgreen },
-    ['@parameter'] = { fg = f.yellow },
+    ['@parameter'] = { fg = f.luolanzi },
     --------------------------------------------------------
     ---@Literals
-    String = { fg = f.mgyellow },
-    Number = { fg = f.pink },
-    Boolean = { fg = f.pink },
+    String = { fg = f.applegreen },
+    Number = { fg = f.yellow },
+    Boolean = { fg = f.yellow },
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
-    Operator = { fg = f.manaohui },
+    Operator = { fg = f.pink },
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
