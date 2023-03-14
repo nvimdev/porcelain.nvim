@@ -13,8 +13,6 @@ local function flipped()
     --bakcground
     bg = '#131824',
     --
-    fg = '#b2bbbe',
-    --
     dred = '#ed556a',
     --blue
     qblue = '#4491d4',
@@ -25,13 +23,13 @@ local function flipped()
     applegreen = '#90a650',
     -- for sign
     green = '#66c18c',
-    lhgreen = '#92b3a5',
+    wzgreen = '#69a794',
     qfgreen = '#509987',
     --
     ---orange
     orange = '#f0945d',
     --
-    yellow = '#e0b046',
+    yellow = '#d1ab52',
     cream = '#c2bd9f',
     --
     voilet = '#917bb5',
@@ -166,7 +164,7 @@ function flip.load()
     ['@function.macro'] = { fg = f.blue },
     ['@method'] = { fg = f.blue },
     ['@method.call'] = { fg = f.blue },
-    ['@constructor'] = { fg = f.lhgreen },
+    ['@constructor'] = { fg = f.wzgreen },
     ['@parameter'] = { fg = '#eea08c' },
     --------------------------------------------------------
     ---@Literals
