@@ -30,7 +30,7 @@ local function flipped()
     --
     yellow = '#e0af68',
     --牙色
-    yase = '#ccbd91',
+    yase = '#c4be99',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
@@ -112,7 +112,7 @@ function flip.load()
     --------------------------------------------------------
     ---@Langauge Relate
     ---@Identifier
-    Identifier = { fg = f.applegreen },
+    Identifier = { fg = f.yase },
     -- various variable names
     ['@variable'] = { fg = f.yase },
     --built-in variable names (e.g. `this`)
