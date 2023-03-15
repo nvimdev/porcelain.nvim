@@ -16,7 +16,7 @@ local function flipped()
     dred = '#ed556a',
     --blue
     qblue = '#4491d4',
-    blue = '#668ad1',
+    blue = '#5d83cf',
     --
     pink = '#ef82a0',
     --
@@ -28,8 +28,9 @@ local function flipped()
     ---orange
     orange = '#f0945d',
     --
-    yellow = '#d1ab52',
-    cream = '#c2bd9f',
+    yellow = '#e0af68',
+    --牙色
+    yase = '#ccbf99',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
@@ -113,7 +114,7 @@ function flip.load()
     ---@Identifier
     Identifier = { fg = f.applegreen },
     -- various variable names
-    ['@variable'] = { fg = f.cream },
+    ['@variable'] = { fg = f.yase },
     --built-in variable names (e.g. `this`)
     ['@variable.builtin'] = { fg = '#E46876' },
     Constant = { fg = f.orange },
