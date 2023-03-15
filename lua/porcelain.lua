@@ -151,7 +151,7 @@ function flip.load()
     Label = { fg = f.aqua },
     Include = { link = 'PreProc' },
     Exception = { fg = f.pink },
-    Statement = { fg = f.orange },
+    Statement = { fg = f.voilet },
     PreProc = { fg = f.voilet },
     --------------------------------------------------------
     ---@Functions
