@@ -30,7 +30,7 @@ local function flipped()
     --
     yellow = '#e0af68',
     --牙色
-    yase = '#ccbf99',
+    yase = '#ccbd91',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
