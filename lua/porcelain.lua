@@ -181,6 +181,14 @@ function flip.load()
     ['@punctuation.bracket'] = { fg = '#8a988e' },
     ['@punctuation.delimiter'] = { fg = '#8a988e' },
     --------------------------------------------------------
+    ---@Tag
+    ['@tag.javascript'] = { fg = f.orange },
+    ['@tag.attribute.javascript'] = { link = '@property' },
+    ['@tag.delimiter.javascript'] = { link = '@punctuation.delimiter' },
+    ['@tag.typescript'] = { fg = f.orange },
+    ['@tag.attribute.typescript'] = { link = '@property' },
+    ['@tag.delimiter.typescript'] = { link = '@punctuation.delimiter' },
+    --------------------------------------------------------
     ---@Diff
     DiffAdd = { fg = f.green },
     DiffChange = { fg = f.blue },
@@ -193,7 +201,7 @@ function flip.load()
     diffNewFile = { fg = f.orange },
     diffFile = { fg = f.cyan },
     --------------------------------------------------------
-    ---@Lsp
+    ---@Diagnostic
     DiagnosticError = { link = 'Error' },
     DiagnosticWarn = { fg = f.notify_yellow },
     DiagnosticInfo = { fg = f.notify_blue },
