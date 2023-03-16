@@ -141,7 +141,7 @@ function flip.load()
     ---@Keywords
     Keyword = { fg = f.voilet },
     ['@keyword.function'] = { fg = f.voilet },
-    ['@keyword.return'] = { fg = f.dred, italic = true },
+    ['@keyword.return'] = { fg = f.voilet, italic = true },
     ['@keyword.operator'] = { link = 'Operator' },
     --if else
     Conditional = { fg = f.voilet },
