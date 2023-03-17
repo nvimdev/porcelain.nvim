@@ -26,9 +26,9 @@ local function flipped()
     green = '#509987',
     --
     ---orange
-    orange = '#db8b5c',
+    orange = '#e3945b',
     --
-    yellow = '#dead64',
+    yellow = '#e6b46c',
     --牙色
     yase = '#ccc3a7',
     --
@@ -155,7 +155,7 @@ function flip.load()
     PreProc = { fg = f.voilet },
     --------------------------------------------------------
     ---@Functions
-    Function = { fg = f.aqua },
+    Function = { fg = f.blue },
     --built-in functions
     ['@function.builtin'] = { fg = f.blue },
     --function calls
@@ -169,12 +169,12 @@ function flip.load()
     --------------------------------------------------------
     ---@Literals
     String = { fg = f.applegreen },
-    Number = { fg = f.orange },
+    Number = { fg = f.pink },
     Boolean = { fg = f.orange },
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
-    Operator = { fg = f.pink },
+    Operator = { fg = f.aqua },
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
