@@ -182,12 +182,15 @@ function flip.load()
     ['@punctuation.delimiter'] = { fg = '#8a988e' },
     --------------------------------------------------------
     ---@Tag
-    ['@tag.javascript'] = { fg = f.orange },
-    ['@tag.attribute.javascript'] = { link = '@property' },
-    ['@tag.delimiter.javascript'] = { link = '@punctuation.delimiter' },
-    ['@tag.typescript'] = { fg = f.orange },
-    ['@tag.attribute.typescript'] = { link = '@property' },
-    ['@tag.delimiter.typescript'] = { link = '@punctuation.delimiter' },
+    ['@tag.html'] = { fg = f.orange },
+    ['@tag.attribute.html'] = { link = '@property' },
+    ['@tag.delimiter.html'] = { link = '@punctuation.delimiter' },
+    ['@tag.javascript'] = { link = '@tag.html' },
+    ['@tag.attribute.javascript'] = { link = '@tag.attribute.html' },
+    ['@tag.delimiter.javascript'] = { link = '@tag.delimiter.html' },
+    ['@tag.typescript'] = { link = '@tag.html' },
+    ['@tag.attribute.typescript'] = { link = '@tag.attribute.html' },
+    ['@tag.delimiter.typescript'] = { link = '@tag.delimiter.html' },
     --------------------------------------------------------
     ---@Diff
     DiffAdd = { fg = f.green },
