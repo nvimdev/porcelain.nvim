@@ -28,7 +28,7 @@ local function flipped()
     ---orange
     orange = '#e3945b',
     --
-    yellow = '#e6b46c',
+    yellow = '#dbb172',
     --牙色
     yase = '#ccc3a7',
     --
