@@ -26,11 +26,11 @@ local function flipped()
     green = '#509987',
     --
     ---orange
-    orange = '#f0945d',
+    orange = '#db8b5c',
     --
-    yellow = '#e0af68',
+    yellow = '#dead64',
     --牙色
-    yase = '#c4be99',
+    yase = '#ccc3a7',
     --
     voilet = '#917bb5',
     yjvoilet = '#525288',
@@ -127,7 +127,7 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.wzgreen },
+    Type = { fg = f.green },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
@@ -135,8 +135,8 @@ function flip.load()
     ['@type.qualifier'] = { fg = f.voilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
     ['@storageclass'] = { fg = f.voilet },
-    ['@field'] = { fg = f.aqua },
-    ['@property'] = { fg = f.aqua },
+    ['@field'] = { fg = f.yellow },
+    ['@property'] = { fg = f.yellow },
     --------------------------------------------------------
     ---@Keywords
     Keyword = { fg = f.voilet },
@@ -155,22 +155,22 @@ function flip.load()
     PreProc = { fg = f.voilet },
     --------------------------------------------------------
     ---@Functions
-    Function = { fg = f.blue },
+    Function = { fg = f.aqua },
     --built-in functions
-    ['@function.builtin'] = { fg = f.qblue },
+    ['@function.builtin'] = { fg = f.blue },
     --function calls
-    ['@function.call'] = { fg = f.blue },
+    ['@function.call'] = { link = 'Function' },
     --preprocessor macros
-    ['@function.macro'] = { fg = f.blue },
-    ['@method'] = { fg = f.blue },
-    ['@method.call'] = { fg = f.blue },
+    ['@function.macro'] = { link = 'Function' },
+    ['@method'] = { link = 'Function' },
+    ['@method.call'] = { link = 'Function' },
     ['@constructor'] = { fg = f.wzgreen },
-    ['@parameter'] = { fg = '#eea08c' },
+    ['@parameter'] = { fg = f.blue },
     --------------------------------------------------------
     ---@Literals
     String = { fg = f.applegreen },
-    Number = { fg = f.yellow },
-    Boolean = { fg = f.yellow },
+    Number = { fg = f.orange },
+    Boolean = { fg = f.orange },
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
@@ -178,8 +178,8 @@ function flip.load()
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
-    ['@punctuation.bracket'] = { fg = '#8a988e' },
-    ['@punctuation.delimiter'] = { fg = '#8a988e' },
+    ['@punctuation.bracket'] = { fg = '#758a99' },
+    ['@punctuation.delimiter'] = { fg = '#758a99' },
     --------------------------------------------------------
     ---@Tag
     ['@tag.html'] = { fg = f.orange },
