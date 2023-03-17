@@ -16,7 +16,7 @@ local function flipped()
     dred = '#ed556a',
     --blue
     qblue = '#4491d4',
-    blue = '#5d83cf',
+    blue = '#6b8fd6',
     --
     pink = '#ef82a0',
     --
