@@ -13,10 +13,13 @@ local function flipped()
     --bakcground
     bg = '#131824',
     --
+    --莓红
+    red = '#c45a65',
     dred = '#ed556a',
     --blue
     qblue = '#4491d4',
-    blue = '#6b8fd6',
+    --晴蓝
+    blue = '#5698c3',
     --
     pink = '#ef82a0',
     --
@@ -25,14 +28,14 @@ local function flipped()
     wzgreen = '#69a794',
     green = '#509987',
     --
-    ---orange
-    orange = '#e3945b',
+    --海螺橙
+    orange = '#f0945d',
     --
-    yellow = '#dbb172',
+    yellow = '#e6b46c',
     --牙色
     yase = '#ccc3a7',
     --
-    voilet = '#917bb5',
+    voilet = '#bc84a8',
     yjvoilet = '#525288',
     danlanzi = '#9da0c9',
     --
@@ -127,7 +130,7 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.green },
+    Type = { fg = f.yellow },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
@@ -135,18 +138,18 @@ function flip.load()
     ['@type.qualifier'] = { fg = f.voilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
     ['@storageclass'] = { fg = f.voilet },
-    ['@field'] = { fg = f.yellow },
-    ['@property'] = { fg = f.yellow },
+    ['@field'] = { fg = f.wzgreen },
+    ['@property'] = { fg = f.wzgreen },
     --------------------------------------------------------
     ---@Keywords
     Keyword = { fg = f.voilet },
-    ['@keyword.function'] = { fg = f.voilet },
+    ['@keyword.function'] = { link = 'Keyword' },
     ['@keyword.return'] = { fg = f.voilet, italic = true },
     ['@keyword.operator'] = { link = 'Operator' },
     --if else
-    Conditional = { fg = f.voilet },
+    Conditional = { link = 'Keyword' },
     --for while
-    Repeat = { fg = f.voilet },
+    Repeat = { link = 'Keyword' },
     Debug = { fg = f.red },
     Label = { fg = f.aqua },
     Include = { link = 'PreProc' },
@@ -157,7 +160,7 @@ function flip.load()
     ---@Functions
     Function = { fg = f.blue },
     --built-in functions
-    ['@function.builtin'] = { fg = f.blue },
+    ['@function.builtin'] = { fg = f.qblue },
     --function calls
     ['@function.call'] = { link = 'Function' },
     --preprocessor macros
@@ -169,12 +172,12 @@ function flip.load()
     --------------------------------------------------------
     ---@Literals
     String = { fg = f.applegreen },
-    Number = { fg = f.pink },
+    Number = { fg = f.orange },
     Boolean = { fg = f.orange },
     Float = { link = 'Number' },
     --
     Define = { link = 'PreProc' },
-    Operator = { fg = f.aqua },
+    Operator = { fg = f.red },
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
