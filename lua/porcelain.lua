@@ -20,7 +20,7 @@ local function flipped()
     --blue
     qblue = '#4491d4',
     --晴蓝
-    blue = '#5698c3',
+    blue = '#7487db',
     --
     applegreen = '#90a650',
     -- for sign
@@ -119,7 +119,7 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.yase },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = f.green },
+    ['@variable.builtin'] = { fg = f.orange, italic = true },
     Constant = { fg = f.orange },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
@@ -130,7 +130,7 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.wzgreen },
+    Type = { fg = f.yellow },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
@@ -138,8 +138,8 @@ function flip.load()
     ['@type.qualifier'] = { fg = f.dpvoilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
     ['@storageclass'] = { fg = f.dpvoilet },
-    ['@field'] = { fg = f.aqua },
-    ['@property'] = { fg = f.aqua },
+    ['@field'] = { fg = f.wzgreen },
+    ['@property'] = { fg = f.wzgreen },
     --------------------------------------------------------
     ---@Keywords
     Keyword = { fg = f.dpvoilet },
@@ -158,7 +158,7 @@ function flip.load()
     Statement = { fg = f.voilet },
     --------------------------------------------------------
     ---@Functions
-    Function = { fg = f.yellow },
+    Function = { fg = f.blue },
     --built-in functions
     ['@function.builtin'] = { fg = f.qblue },
     --function calls
@@ -168,7 +168,7 @@ function flip.load()
     ['@method'] = { link = 'Function' },
     ['@method.call'] = { link = 'Function' },
     ['@constructor'] = { fg = f.wzgreen },
-    ['@parameter'] = { fg = f.qblue },
+    ['@parameter'] = { fg = f.aqua },
     --------------------------------------------------------
     ---@Literals
     String = { fg = f.applegreen },
