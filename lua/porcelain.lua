@@ -30,7 +30,7 @@ local function flipped()
     --海螺橙
     orange = '#f0945d',
     --枯黄
-    yellow = '#d1af52',
+    yellow = '#cfae6b',
     --牙色
     yase = '#ccc3a7',
     --
@@ -129,7 +129,7 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.yellow },
+    Type = { fg = f.wzgreen },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
@@ -157,7 +157,7 @@ function flip.load()
     Statement = { fg = f.voilet },
     --------------------------------------------------------
     ---@Functions
-    Function = { fg = f.applegreen },
+    Function = { fg = f.yellow },
     --built-in functions
     ['@function.builtin'] = { fg = f.qblue },
     --function calls
@@ -170,7 +170,7 @@ function flip.load()
     ['@parameter'] = { fg = f.qblue },
     --------------------------------------------------------
     ---@Literals
-    String = { fg = f.wzgreen },
+    String = { fg = f.applegreen },
     Number = { fg = f.orange },
     Boolean = { fg = f.orange },
     Float = { link = 'Number' },
