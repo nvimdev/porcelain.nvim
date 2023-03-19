@@ -11,7 +11,8 @@ local function flipped()
     base05 = '#151626',
     base06 = '#16161D',
     --bakcground
-    bg = '#131824',
+    --暗蓝紫
+    bg = '#131124',
     --
     --莓红
     red = '#c45a65',
@@ -30,14 +31,14 @@ local function flipped()
     --
     --海螺橙
     orange = '#f0945d',
-    --
-    yellow = '#e6b46c',
+    --枯黄
+    yellow = '#d3b17d',
     --牙色
     yase = '#ccc3a7',
     --
     voilet = '#bc84a8',
     yjvoilet = '#525288',
-    danlanzi = '#9da0c9',
+    dpvoilet = '#957FB8',
     --
     aqua = '#55a6bd',
     --
@@ -119,7 +120,7 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.yase },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = '#E46876' },
+    ['@variable.builtin'] = { fg = f.wzgreen, italic = true },
     Constant = { fg = f.orange },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
@@ -130,35 +131,35 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.yellow },
+    Type = { fg = f.wzgreen },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
     --type qualifiers (e.g. `const`)
-    ['@type.qualifier'] = { fg = f.voilet, italic = true },
+    ['@type.qualifier'] = { fg = f.dpvoilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
-    ['@storageclass'] = { fg = f.voilet },
-    ['@field'] = { fg = f.wzgreen },
-    ['@property'] = { fg = f.wzgreen },
+    ['@storageclass'] = { fg = f.dpvoilet },
+    ['@field'] = { fg = f.aqua },
+    ['@property'] = { fg = f.aqua },
     --------------------------------------------------------
     ---@Keywords
-    Keyword = { fg = f.voilet },
+    Keyword = { fg = f.dpvoilet },
     ['@keyword.function'] = { link = 'Keyword' },
-    ['@keyword.return'] = { fg = f.voilet, italic = true },
+    ['@keyword.return'] = { fg = f.dpvoilet, italic = true },
     ['@keyword.operator'] = { link = 'Operator' },
     --if else
-    Conditional = { link = 'Keyword' },
+    Conditional = { fg = f.voilet },
     --for while
-    Repeat = { link = 'Keyword' },
+    Repeat = { fg = f.voilet },
     Debug = { fg = f.red },
     Label = { fg = f.aqua },
+    PreProc = { fg = f.dpvoilet },
     Include = { link = 'PreProc' },
     Exception = { fg = f.pink },
     Statement = { fg = f.voilet },
-    PreProc = { fg = f.voilet },
     --------------------------------------------------------
     ---@Functions
-    Function = { fg = f.blue },
+    Function = { fg = f.yellow },
     --built-in functions
     ['@function.builtin'] = { fg = f.qblue },
     --function calls
@@ -226,7 +227,7 @@ function flip.load()
     GitGutterDelete = { fg = f.notify_red },
     GitGutterChangeDelete = { fg = f.notify_red },
     --dashboard
-    DashboardHeader = { fg = f.voilet },
+    DashboardHeader = { fg = f.dpvoilet },
     DashboardFooter = { link = 'Comment' },
     DashboardProjectTitle = { fg = f.qblue, bold = true },
     DashboardProjectTitleIcon = { fg = f.danlanzi },
