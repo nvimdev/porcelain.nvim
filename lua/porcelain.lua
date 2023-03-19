@@ -37,6 +37,7 @@ local function flipped()
     voilet = '#bc84a8',
     yjvoilet = '#525288',
     dpvoilet = '#957FB8',
+    danlanzi = '#a7a8bd',
     --
     aqua = '#55a6bd',
     --
@@ -180,8 +181,8 @@ function flip.load()
     Comment = { fg = f.base01 },
     --------------------------------------------------------
     ---@punctuation
-    ['@punctuation.bracket'] = { fg = '#758a99' },
-    ['@punctuation.delimiter'] = { fg = '#758a99' },
+    ['@punctuation.bracket'] = { fg = '#7397ab' },
+    ['@punctuation.delimiter'] = { fg = '#7397ab' },
     --------------------------------------------------------
     ---@Tag
     ['@tag.html'] = { fg = f.orange },
