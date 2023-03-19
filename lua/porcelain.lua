@@ -119,7 +119,7 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.yase },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = f.yellow, italic = true },
+    ['@variable.builtin'] = { fg = f.red },
     Constant = { fg = f.orange },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
