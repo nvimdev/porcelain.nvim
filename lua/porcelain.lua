@@ -22,8 +22,6 @@ local function flipped()
     --晴蓝
     blue = '#5698c3',
     --
-    pink = '#ef82a0',
-    --
     applegreen = '#90a650',
     -- for sign
     wzgreen = '#69a794',
@@ -32,7 +30,7 @@ local function flipped()
     --海螺橙
     orange = '#f0945d',
     --枯黄
-    yellow = '#d3b17d',
+    yellow = '#d1af52',
     --牙色
     yase = '#ccc3a7',
     --
@@ -120,7 +118,7 @@ function flip.load()
     -- various variable names
     ['@variable'] = { fg = f.yase },
     --built-in variable names (e.g. `this`)
-    ['@variable.builtin'] = { fg = f.wzgreen, italic = true },
+    ['@variable.builtin'] = { fg = f.green },
     Constant = { fg = f.orange },
     ['@constant.builtin'] = { link = 'Constant' },
     -- constants defined by the preprocessor
@@ -131,7 +129,7 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.wzgreen },
+    Type = { fg = f.yellow },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
@@ -150,16 +148,16 @@ function flip.load()
     --if else
     Conditional = { fg = f.voilet },
     --for while
-    Repeat = { fg = f.voilet },
+    Repeat = { link = 'Conditional' },
     Debug = { fg = f.red },
-    Label = { fg = f.aqua },
+    Label = { fg = f.voilet },
     PreProc = { fg = f.dpvoilet },
     Include = { link = 'PreProc' },
-    Exception = { fg = f.pink },
+    Exception = { fg = f.voilet },
     Statement = { fg = f.voilet },
     --------------------------------------------------------
     ---@Functions
-    Function = { fg = f.yellow },
+    Function = { fg = f.applegreen },
     --built-in functions
     ['@function.builtin'] = { fg = f.qblue },
     --function calls
@@ -169,10 +167,10 @@ function flip.load()
     ['@method'] = { link = 'Function' },
     ['@method.call'] = { link = 'Function' },
     ['@constructor'] = { fg = f.wzgreen },
-    ['@parameter'] = { fg = f.blue },
+    ['@parameter'] = { fg = f.qblue },
     --------------------------------------------------------
     ---@Literals
-    String = { fg = f.applegreen },
+    String = { fg = f.wzgreen },
     Number = { fg = f.orange },
     Boolean = { fg = f.orange },
     Float = { link = 'Number' },
