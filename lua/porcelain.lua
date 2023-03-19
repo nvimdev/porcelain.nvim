@@ -12,7 +12,7 @@ local function flipped()
     base06 = '#16161D',
     --bakcground
     --暗蓝紫
-    bg = '#131124',
+    bg = '#1b1b26',
     --
     --莓红
     red = '#c45a65',
