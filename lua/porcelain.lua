@@ -156,6 +156,7 @@ function flip.load()
     Include = { link = 'PreProc' },
     Exception = { fg = f.voilet },
     Statement = { fg = f.voilet },
+    Special = { fg = f.yellow },
     --------------------------------------------------------
     ---@Functions
     Function = { fg = f.blue },
