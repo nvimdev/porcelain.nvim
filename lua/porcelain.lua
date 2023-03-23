@@ -12,7 +12,7 @@ local function flipped()
     base06 = '#16161D',
     --bakcground
     --暗蓝紫
-    bg = '#1b1b26',
+    bg = '#131824',
     --
     --莓红
     red = '#c45a65',
@@ -20,7 +20,9 @@ local function flipped()
     --blue
     qblue = '#4491d4',
     --晴蓝
-    blue = '#7487db',
+    blue = '#7788d4',
+    --y远山蓝
+    yslan = '#8fb2c9',
     --
     applegreen = '#90a650',
     -- for sign
@@ -29,10 +31,8 @@ local function flipped()
     --
     --海螺橙
     orange = '#f0945d',
-    --枯黄
-    yellow = '#cfae6b',
-    --牙色
-    yase = '#ccc3a7',
+    --沙石黄#e5b751
+    yellow = '#e0af68',
     --
     voilet = '#bc84a8',
     yjvoilet = '#525288',
@@ -115,9 +115,9 @@ function flip.load()
     --------------------------------------------------------
     ---@Langauge Relate
     ---@Identifier
-    Identifier = { fg = f.yase },
+    Identifier = { fg = f.yslan },
     -- various variable names
-    ['@variable'] = { fg = f.yase },
+    ['@variable'] = { fg = f.yslan },
     --built-in variable names (e.g. `this`)
     ['@variable.builtin'] = { fg = f.red },
     Constant = { fg = f.orange },
@@ -130,24 +130,24 @@ function flip.load()
     -- ['@symbol'] = {},
     --------------------------------------------------------
     ---@Types
-    Type = { fg = f.yellow },
+    Type = { fg = f.blue },
     ['@type.builtin'] = { link = 'Type' },
     --type definitions (e.g. `typedef` in C)
     ['@type.definition'] = { link = 'Type' },
     --type qualifiers (e.g. `const`)
-    ['@type.qualifier'] = { fg = f.dpvoilet, italic = true },
+    ['@type.qualifier'] = { fg = f.voilet, italic = true },
     --modifiers that affect storage in memory or life-time like C `static`
-    ['@storageclass'] = { fg = f.dpvoilet },
+    ['@storageclass'] = { fg = f.voilet },
     ['@field'] = { fg = f.wzgreen },
     ['@property'] = { fg = f.wzgreen },
     --------------------------------------------------------
     ---@Keywords
-    Keyword = { fg = f.dpvoilet },
+    Keyword = { fg = f.voilet },
     ['@keyword.function'] = { link = 'Keyword' },
-    ['@keyword.return'] = { fg = f.dpvoilet, italic = true },
+    ['@keyword.return'] = { fg = f.voilet, italic = true },
     ['@keyword.operator'] = { link = 'Operator' },
     --if else
-    Conditional = { fg = f.voilet },
+    Conditional = { fg = f.dpvoilet },
     --for while
     Repeat = { link = 'Conditional' },
     Debug = { fg = f.red },
@@ -159,7 +159,7 @@ function flip.load()
     Special = { fg = f.yellow },
     --------------------------------------------------------
     ---@Functions
-    Function = { fg = f.blue },
+    Function = { fg = f.yellow },
     --built-in functions
     ['@function.builtin'] = { fg = f.qblue },
     --function calls
@@ -196,6 +196,9 @@ function flip.load()
     ['@tag.attribute.typescript'] = { link = '@tag.attribute.html' },
     ['@tag.delimiter.typescript'] = { link = '@tag.delimiter.html' },
     --------------------------------------------------------
+    --------------------------------------------------------
+    ---@Markdown
+    ['@text.reference.markdown_inline'] = { fg = f.blue },
     ---@Diff
     DiffAdd = { fg = f.green },
     DiffChange = { fg = f.blue },
